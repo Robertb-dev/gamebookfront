@@ -1,0 +1,128 @@
+
+/*CSS DO PROJETO GAMEBOOK*/
+
+/*Seletor universal, todas as tags serão afetadas por esse homi*/
+*{
+  padding: 0;
+  margin: 0; /*tanto esse e o de cima é para o site ocupar todo o espaço disponivel da tela, e não ter espaços em volta dos elementos*/
+  text-decoration: none;
+  list-style: none; /*sem estilos para listas e textos, porem se quiser alterar é só apagar*/
+}
+
+body{
+  background: var(--backgroundsite);
+}
+
+/*DEFINIÇÕES GERAIS*/
+/*Aqui coloquei variaveis para agilizar a vida, em vez de repetir as mesmas cores várias vezes*/
+:root {
+  --backgroundsite: rgb(27, 23, 50);
+  --cabecalhoBG: linear-gradient(rgb(34,	20,	52), rgb(87,	35,	128));
+  --corgeral: linear-gradient( rgb(160,	69,	168), rgb(130,	86,	255));
+  --rodape: linear-gradient( rgb(139,	110,	187), rgb(126,	85,	193));
+  --branco: white;
+}
+
+p{
+  /*1em equivale a 16pixels*/
+  font-size: 1.2em;
+  color: var(--branco);
+}
+
+
+
+/*CSS DO CABEÇALHO*/
+header{
+  background-image: var(--cabecalhoBG);
+  height: 40vh; /*vh é uma unidade de medida, significa 40% do total da área visivel*/
+  margin-top: 1em;
+}
+
+/*o grid é aqui*/
+.grid-container-cabecalho{
+  display: grid;
+
+  grid-template-areas:
+  'item1cabecalho item1cabecalho item2cabecalho item2cabecalho item3cabecalho'
+  'item4cabecalho item4cabecalho item4cabecalho item4cabecalho item4cabecalho';
+  gap: 10px;
+  
+}
+
+
+
+
+/*estilização da barra de pesquisa*/
+/*Fazer o botão ao lado do pesquisar, ou ai dentro*/
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 15%;
+  font-size: 1em;
+  background-color: var( --rodape);
+  padding: 12px 20px 12px 40px;
+}
+
+
+/*estilização da cabeça do usuário*/
+.item3cabecalho{
+  width:38%; 
+  height:30%;
+}
+.item3cabecalho img{
+  width:100%; 
+  height:100%;
+}
+
+/*estilização dos botões de links do cabeçalho   padding: 1.2em 2em;*/
+
+.item4cabecalho{
+  background-color: red;;
+}
+
+.linksbotao{
+  margin:2em;
+  padding: 2% 4%;
+  font-size: 1em;
+  background: var(--corgeral);
+  color: var(--branco);
+  border-radius: 15%;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  transition-duration: 0.4s;
+}
+.linksbotao:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/*FIM DA ÁREA CABEÇALHO*/
+
+
+/*INICIO DA ÁREA JOGOS DA SEMANA*/
+
+/*FIM DA ÁREA JOGOS DA SEMANA*/
+
+
+
+
+/*INICIO DA ÁREA ARTIGOS*/
+
+/*FIM DA ÁREA ARTIGOS*/
+
+
+
+
+/*INICIO DA ÁREA FANMADE*/
+
+/*FIM DA ÁREA FANMADE*/
+
+
+/*FIM CSS DO HOME*/
+
+
+
+
+
