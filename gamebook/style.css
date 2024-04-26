@@ -10,119 +10,210 @@
 }
 
 body{
-  background: var(--backgroundsite);
+  background-color: rgb(27, 23, 50);
 }
+
 
 /*DEFINIÇÕES GERAIS*/
 /*Aqui coloquei variaveis para agilizar a vida, em vez de repetir as mesmas cores várias vezes*/
 :root {
   --backgroundsite: rgb(27, 23, 50);
-  --cabecalhoBG: linear-gradient(rgb(34,	20,	52), rgb(87,	35,	128));
+  --cabecalhoBG: linear-gradient(180, rgb(34,20,52), rgb(87,	35,	128));
   --corgeral: linear-gradient( rgb(160,	69,	168), rgb(130,	86,	255));
   --rodape: linear-gradient( rgb(139,	110,	187), rgb(126,	85,	193));
   --branco: white;
 }
 
+/*DEFINIÇÃO DE BACKGROUNDS*/
+footer{
+  background-image: linear-gradient( rgb(139,	110,	187), rgb(126,	85,	193));
+}
+section{
+  background-color: rgb(27, 23, 50);
+}
+
 p{
   /*1em equivale a 16pixels*/
   font-size: 1.2em;
-  color: var(--branco);
-}
 
+}
 
 
 /*CSS DO CABEÇALHO*/
 header{
-  background-image: var(--cabecalhoBG);
-  height: 40vh; /*vh é uma unidade de medida, significa 40% do total da área visivel*/
-  margin-top: 1em;
+background-image: linear-gradient(rgb(34,20,52), rgb(87,	35,	128));
+height: 30vh;
+
+}
+h1, h2, h3{
+  color: white;
 }
 
-/*o grid é aqui*/
-.grid-container-cabecalho{
-  display: grid;
-
-  grid-template-areas:
-  'item1cabecalho item1cabecalho item2cabecalho item2cabecalho item3cabecalho'
-  'item4cabecalho item4cabecalho item4cabecalho item4cabecalho item4cabecalho';
-  gap: 10px;
-  
+.cabecalho{
+  height: 12vh;
 }
 
+.logo{
+  margin-left: 0.5%;
+  margin-top: 0.5%;
+}
+.logoimg{
+  height: 90%;
+  width: 90%;
+}
+.buscacabecalho{
+  margin-left: 30%;
+  width: 40%;
+}
 
-
-
-/*estilização da barra de pesquisa*/
-/*Fazer o botão ao lado do pesquisar, ou ai dentro*/
-input[type=text] {
+.headeruser{
+margin-right: 3%;
+}
+.userimg{
+  height: 100%;
   width: 100%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 15%;
-  font-size: 1em;
-  background-color: var( --rodape);
-  padding: 12px 20px 12px 40px;
 }
 
-
-/*estilização da cabeça do usuário*/
-.item3cabecalho{
-  width:38%; 
-  height:30%;
+.nav-item a{
+  color:white;
+  font-size: 120%;
 }
-.item3cabecalho img{
-  width:100%; 
-  height:100%;
+.nav-link{
+  background-image:linear-gradient( rgb(160,	69,	168), rgb(130,	86,	255)); 
+  color:white;
 }
 
-/*estilização dos botões de links do cabeçalho   padding: 1.2em 2em;*/
-
-.item4cabecalho{
-  background-color: red;;
+.navbar-toggler{
+  background-image:linear-gradient( rgb(160,	69,	168), rgb(130,	86,	255)); 
 }
-
-.linksbotao{
-  margin:2em;
-  padding: 2% 4%;
-  font-size: 1em;
-  background: var(--corgeral);
-  color: var(--branco);
-  border-radius: 15%;
-  cursor: pointer;
-  display: inline-block;
-  border: none;
-  transition-duration: 0.4s;
-}
-.linksbotao:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-
 /*FIM DA ÁREA CABEÇALHO*/
 
 
-/*INICIO DA ÁREA JOGOS DA SEMANA*/
+/*INICIO DA ÁREA NOTÍCIAS DA SEMANA HOME*/
+.itensdobanner{
+height: 180px;
+width: 323px;
+background-color: blueviolet;
+font-size: 1.3rem;
+color:white;
+text-align: justify;
+}
 
-/*FIM DA ÁREA JOGOS DA SEMANA*/
+.itensdobanner p{
+  margin: 15px;
+}
+
+.bannernoticias{
+  height: 247px;
+  width: 475px;
+}
+/*FIM DA ÁREA NOTÍCIAS DA SEMANA HOME*/
 
 
 
 
-/*INICIO DA ÁREA ARTIGOS*/
+/*INICIO DA ÁREA ARTIGOS HOME*/
+.homeartigos{
+  height: 700px;
 
-/*FIM DA ÁREA ARTIGOS*/
+}
+.imgobra{
+  height: 80%;
+  width: 60%;
+}
+/*FIM DA ÁREA ARTIGOS HOME*/
+
+/*INICIO DA ÁREA RODAPÉ HOME*/
+.rodape{
+  height: 40vh;
+}
+.listarodape a{
+  text-decoration: none;
+  color:white;
+}
+/*FIM DA ÁREA RODAPÉ HOME*/
+
+/*FIM CSS DO HOME*/
 
 
 
+/*INICIO DO CSS DA PÁGINA JOGOS DA SEMANA*/
+
+.card{
+  background-color: blueviolet;
+}
+.card a{
+  color: white;
+}
+
+/*FIM DO CSS DA PÁGINA JOGOS DA SEMANA*/
+
+
+
+/*INICIO DO CSS DA PÁGINA ARTIGOS*/
+.cardfundo{
+  background-color:blueviolet;
+}
+.artigos{
+  height: auto;
+}
+/*FIM DO CSS DA PÁGINA ARTIGOS*/
 
 /*INICIO DA ÁREA FANMADE*/
 
 /*FIM DA ÁREA FANMADE*/
 
 
-/*FIM CSS DO HOME*/
 
+/*INICIO DO CSS DA ÁREA LOGIN*/
 
+.imagemlogin{
+ 
+  width: 30rem;
+  height: 30rem;
+}
+.login{
+   padding-top: 5rem;
+  width: auto;
+  height: 50rem;
+}
 
+.botaolink{
+  width: 20rem;
+  height: 3rem;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  background-color: white;
+}
 
+.botaocriarconta{
+  width: 20rem;
+  height: 3rem;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  background-color:blueviolet;
+  color: white;
+}
+
+.botaocriarconta a{
+  color: white;
+  text-decoration: none;
+}
+
+.botaoentrar{
+  background-color:blueviolet;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 25px;
+  margin-bottom: 10px;
+ 
+}
+
+.botaoentrar a{
+   color: black;
+   text-decoration: none;
+   font-size: 1.4rem;
+}
+
+/*FIM DO CSS DA ÁREA LOGIN*/
 
