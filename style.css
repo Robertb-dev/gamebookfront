@@ -23,7 +23,9 @@ body{
   --rodape: linear-gradient( rgb(139,	110,	187), rgb(126,	85,	193));
   --branco: white;
 }
-
+.espacoEntreAreas{
+  padding-top: 130px;
+}
 /*DEFINIÇÃO DE BACKGROUNDS*/
 footer{
   background-image: linear-gradient( rgb(139,	110,	187), rgb(126,	85,	193));
@@ -159,9 +161,18 @@ text-align: justify;
 }
 /*FIM DO CSS DA PÁGINA ARTIGOS*/
 
-/*INICIO DA ÁREA FANMADE*/
 
-/*FIM DA ÁREA FANMADE*/
+
+/*INICIO DA PÁGINA FANMADE*/
+.imagemdoscard{
+  height: 400px;
+}
+
+.imagemdoscardsartistas{
+  height: 190px;
+}
+
+/*FIM DA PÁGINA FANMADE*/
 
 
 
